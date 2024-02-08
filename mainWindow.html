@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/d15157182d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <img src="Assets/vangogh_logo.png" alt="" class="icon">
+      <div class="traffic">
+        <button id="min">&#xE73C;</button>
+        <button id="close">&#xE711;</button>
+      </div>
+    </header>
+    <input type="file" id="input" accept="image/*">
+    <img id="image" src="" alt="" hidden>
+    <div class="container">
+      <button class="control" type="button" id="selectImage"><i class="far fa-file-image"></i> Select Image</button>
+      <button class="control" type="button" id="simpleSort"><i class="fas fa-shapes"></i> Basic Sort</button>
+      <button class="control" type="button" id="advancedSort"><i class="fas fa-meteor"></i> Advanced Sort</button>
+      <button class="control" type="button" id="saveButton"><i class="fas fa-download"></i> Download Art</button>
+      <button class="delete" type="button" id="delete"><i class="far fa-trash-alt"></i> Delete</button>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="logic.js" async defer></script>
+    <script src="Sorters.js" async defer></script>
+  </body>
+</html>
